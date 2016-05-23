@@ -1,0 +1,246 @@
+/********************/
+/********************/
+/* Global Styles */
+/********************/
+
+*{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:border-box;
+  font-family: 'Merriweather', serif;
+}
+
+/********************/
+/* General Styles */
+/********************/
+
+fieldset{
+  border: 0;
+}
+
+hr{
+  width: 95%;
+  background: black;
+  padding-left: 10px;
+}
+
+p{
+  text-align: center;
+}
+
+img{
+  width: 50%;
+  display: block;
+  margin: 0 auto;
+  border: 1px dashed black;
+}
+
+/********************/
+/* Mobile First Layout */
+/********************/
+
+h1{
+  font-weight:bold;
+  font-size: 175%;
+  text-align: center;
+}
+
+header{
+  background: black;
+  color: white;
+  text-align: center;
+  font-size: 150%;
+  width: 100%;
+  height: 90px;
+  font-weight: bold;
+}
+
+header h4{
+  margin: 0;
+  padding-top: 30px;
+  font-weight: 100;
+}
+
+.signup-info{
+  text-align: center;
+  font-weight: 100;
+  font-size: 140%;
+}
+
+.summary{
+  display: block;
+  padding: 0 10px;
+  font-size: 18px;
+  color: lightgrey;
+  margin-bottom: 40px;
+}
+
+.main-form{
+  display:block;
+  width: 100%;
+  margin-left: 5px;
+  text-align: left;
+}
+
+legend{
+  font-weight: bold;
+  font-size: 140%;
+  margin: 15px 0 15px 0;
+}
+
+label{
+  opacity: .5;
+}
+
+input,
+select{
+  background-color: lightgrey;
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin: 15px 0;
+  padding-left: 10px;
+}
+
+::-webkit-input-placeholder {
+  padding-right: 5px;
+  font-style: italic;
+  text-align: right;
+}
+:-moz-placeholder { /* older Firefox*/
+  padding-right: 5px;
+  font-style: italic;
+  text-align: right;
+}
+::-moz-placeholder { /* Firefox 19+ */ 
+  padding-right: 5px;
+  font-style: italic;
+  text-align: right;
+} 
+:-ms-input-placeholder { 
+  padding-right: 5px;
+  font-style: italic;
+  text-align: right;
+}
+
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+input[name*="name"]:focus,
+input[name*="email"]:focus{
+    outline: none !important;
+    border:1px solid red;
+}
+
+input:focus,
+textarea:focus{
+    outline: none !important;
+    border:1px solid darkblue;
+    box-shadow: 0 0 10px #719ECE;
+    background: #e0e0e0;
+}
+
+.option-label{
+  margin: 15px 0 10px 0;
+  display:inline-block;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+  height: 15px;
+  width: 15px;
+  margin: 10px 5px 10px 0;
+}
+
+textarea{
+  width: 100%;
+  height: 100px;
+  background-color: lightgrey;
+  margin:15px 0 10px 0;
+}
+
+button{
+  width: 100%;
+  height: 55px;
+  background: #4CB7A5;
+  border-radius: 5px;
+  border: 1px solid #3E766D;
+  color: white;
+}
+
+button:hover{
+  box-shadow: 0 0 10px #719ECE;
+}
+
+a{
+  text-decoration: none;
+  color:inherit;
+}
+
+footer p{
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
+}
+
+/********************/
+/* Media Queries */
+/********************/
+
+
+
+/********************/
+/* Desktop Layout */
+/********************/
+
+@media (min-width: 760px){
+
+.main-form label{
+    display: inline-block;
+    width: 20%;
+    white-space: nowrap;
+    overflow: inherit;
+    text-align: left;
+    float: left;
+    clear: both;;
+    padding-top: 15px;
+}
+  
+.main-form input,
+.main-form select{
+    margin: 0 0 40px 0;
+    width: 80%;
+    display: inline-block;
+    float: left;
+    clear: right;
+}
+
+input[name$="zip"]{
+  width: 15%;
+}
+
+hr{
+  width:75%;
+}
+
+.main-form,
+.bottom-form{
+  margin: 0 auto;
+  width: 80%;
+}
+
+.bottom-form input{
+  margin: 0;
+  margin-top: 4px;
+}
+
+.bottom-form label{
+  display: inline-block;
+  float:none;
+  padding: 0 0 15px 5px;
+  margin: 0;
+}
+
+}
